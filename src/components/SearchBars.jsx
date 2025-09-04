@@ -8,7 +8,7 @@ const SearchBars = () => {
         <>
             <input type="text" placeholder='Search for posts...' value={postInput} onChange={(e) => setPostInput(e.target.value)} />
 
-            <input type="text" placeholder='Search post by tags...' value={tagInput} onChange={(e) => setTagInput(e.target.value)} />
+            <input type="text" placeholder='Search post by tags...' value={tagInput} onChange={(e) => setTagInput(e.target.value.toLowerCase())} />
         </>
     )
 }
