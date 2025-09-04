@@ -1,0 +1,100 @@
+html,body{
+  width: 100%;
+  min-height: 100svh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.search-bar-container {
+  width: 100%;
+  padding: 20px 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.search-bar-container input{
+  width: 40%;
+  min-width: 300px;
+  padding: 12px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.625);
+  border-radius: 50px;
+  caret-color: blue;
+}
+.search-bar-container input::placeholder{
+  opacity: .7;
+  font-size: 14px;
+}
+
+.post-container{
+  width: 100%;
+  padding: 10px 10vw 100px 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:10px;
+}
+.post {
+  min-width: 300px;
+  max-width: 40%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.833),
+              inset 1px 1px 1px rgba(0, 0, 0, 0.833);
+  padding: 10px;
+}
+.post h1{
+  font-size: max(1.6vw,24px);
+}
+.post p{
+  font-size: max(.8vw,14px);
+  padding: 18px 5px;
+}
+.post-details{
+  border-top: 1px solid rgba(0, 0, 0, 0.403);
+  padding: 5px 0px;
+  display: flex;
+  padding:5px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.tags{
+  display: flex;
+  padding: 5px 0px;
+  gap: 3px;
+}
+.tags p{
+  border: 1px solid rgba(0, 0, 255, 0.382);
+  background-color: rgba(0, 0, 255, 0.101);
+  padding: 2px 7px;
+  border-radius: 15px;
+  color: blue;
+}
+.reactions{
+  display: flex;
+  padding:5px 0;
+  gap: 4px;
+}
+
+.reactions p{
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+.views{
+  display: flex;
+    padding: 5px 0;
+}
+.views p{
+  padding: 0 5px;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  border-radius: 20px;
+  display: flex;
+  max-height: fit-content;
+}
+
+
